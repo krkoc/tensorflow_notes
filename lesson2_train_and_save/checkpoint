@@ -1,0 +1,2 @@
+model_checkpoint_path: "/home/peter/tensorflow_notes/lesson2_train_and_save/"
+all_model_checkpoint_paths: "/home/peter/tensorflow_notes/lesson2_train_and_save/"
