@@ -1,10 +1,3 @@
-
-# coding: utf-8
-
-# In[38]:
-
-
-#get_ipython().magic(u'matplotlib inline')
 import matplotlib.pyplot as plt
 import tensorflow as tf
 import numpy as np
@@ -22,18 +15,16 @@ img_size = 28
 img_size_flat = img_size * img_size
 
 # Tuple with height and width of images used to reshape arrays.
-img_shape = (img_size, img_size)
+img_shape = (img_size, img_size)  
 
 # Number of classes, one class for each of 10 digits.
 num_classes = 10
-
-
 
 def plot_images(images, cls_true, cls_pred=None):
     assert len(images) == len(cls_true) == 9
     
     # Create figure with 3x3 sub-plots.
-    fig, axes = plt.subplots(3, 3)
+    fig, axes = plt.subplots(3, 3)  
     fig.subplots_adjust(hspace=0.3, wspace=0.3)
 
     for i, ax in enumerate(axes.flat):
@@ -50,8 +41,6 @@ def plot_images(images, cls_true, cls_pred=None):
         # Remove ticks from the plot.
         ax.set_xticks([])
         ax.set_yticks([])
-
-
 # In[39]:
 
 def getonehot(value):
@@ -76,10 +65,7 @@ for subdir, dirs, files in os.walk('/home/peter/tensorflow_scripts/nminst'):
           image= np.asarray(im)
           
 
-          image=  1-np.transpose(image)[2].flatten()/256.
-          if i==4: 
-            print "image"
-            print image    
+          image=  1-np.transpose(image)[2].flatten()/256.    
           images.append(image)
 
 npfiles=np.array(filelist) 
@@ -163,18 +149,12 @@ def optimize(num_iterations):
 
 # In[53]:
 
+   
 
 
-    
+optimize(100) #perform 100 optimisations
 
-
-optimize(100)
 print "exiting optimization"
-
-# In[56]:
-
-
-
 
 img = cv2.imread("/home/peter/tensorflow_scripts/nminst/1_715.png")
 image= np.asarray(img)
@@ -182,7 +162,7 @@ image=  np.transpose(image)[1].flatten()
 newvar=1-np.array(image/256.)
 #print newvar
 newvar = np.reshape(newvar, (-1, 784))
-print(newvar)
+#print(newvar)
 
 res=session.run(y_pred, feed_dict={x: newvar})
 print res
