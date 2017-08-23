@@ -1,7 +1,7 @@
 # tensorflow_notes
 These are my first documented steps into TensorFlow. The python examples borrow (very) heavily from Hvass-Labs tutorials. Please bear in mind that my contributions are just quick and dirty ways to find out how things are done in TensorFlow. Unfortunately I have no time or interest to make nice polished tutorials in the near future. If you have a hard time following the code, please refer to the Hvass-Labs tutorials first (https://github.com/Hvass-Labs/TensorFlow-Tutorials).
 
-#lesson1_simple_CNN:
+#lesson1_simple_NN:
 
 The thing that bothered me was a myriad of tutorials on how to train and evaluate a TF model with the MNIST dataset, but not a single one that would show how to use ones own images for that. 
 
