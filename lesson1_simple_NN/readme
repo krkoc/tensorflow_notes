@@ -1,0 +1,2 @@
+This lesson uses opencvexperimets.py to create a set of immages to be used in the place of the famous mnist dataset.
+The hello_world_CNN_with_custom_training_set uses those images with the "standard" optimizer
