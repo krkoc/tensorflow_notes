@@ -7,8 +7,18 @@ The thing that bothered me was a myriad of tutorials on how to train and evaluat
 
 The hello world example in this lesson uses a custom dataset of 28x28 images with numbers instead of the MNIST dataset. It uses the script “opencvexperiments.py” to produce a desired number of training images as single digit numbers of the decimal system. The images have a fixed font but vary in size, position, rotation and stretch. These images can be fed into the simple Y=aX+b model (or any model with the same input interface) in TensorFlow.
 
+#lesson4_single_number_CCN
+
+neural network recognizes single digits
+
+#lesson5_trinumber_CNN
+neural network recognizes triplets of nubers at the same time without segmentation
+
+#lesson6_trinuber_CNN_first_digits
+neural network recognizes the first number in a trinuber digits
 
 
+_______________
 License (MIT)
 
 These tutorials and source-code are published under the MIT License which allows very broad use for both academic and commercial purposes.
